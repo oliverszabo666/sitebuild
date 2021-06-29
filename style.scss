@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300&display=swap');
+
+.burger-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0.8);
+
+
+    @media (min-width: 800px) {
+        transform: scale(1);
+    }
+}
+
+.background {
+    min-width: 100vw;
+    min-height: 100vh;
+    background:#eae9e4;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0px auto;
+    padding: 20px 0;
+
+    @media (min-width: 800px) {
+        padding: 30px 0;
+    }
+
+  
+
+    .title {
+        h2 {
+            font-size: 22px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            width: 65%;
+            color: #1d1716;
+            padding-top: 20px;
+
+            @media (min-width: 800px) {
+                font-size: 35px;
+                font-weight: 600;
+                padding-top: 40px;
+            }
+        }
+        h3 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 11px;
+            width: 55%;
+            color: #7a7a7b;
+
+            @media (min-width: 800px) {
+              font-size: 18px;
+            }
+        }
+    }
+    .text {
+        margin-top: 30px;
+        line-height: 1.8;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        color: #1d1716;
+
+        @media (min-width: 800px) {
+           width: 90%;
+           font-size: 15px;
+        }
+
+    }
+}
+
+button {
+    background: #1d1716;
+    color: white;
+    padding: 10px;
+    border: 0;
+}
