@@ -1,0 +1,5 @@
+#nginx
+FROM nginx
+
+#copy
+COPY /usr/share/nginx/html
